@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.preview-card-wide.mdl-card {
+    width: 512px;
+    margin: 100px auto;
+}
+
+.preview-card-wide > .mdl-card__title {
+    padding: 0;
+    color: #fff;
+    height: 176px;
+}
+
+.layout-transparent {
+    background: url(../img/cp_backdrop.jpg) center / cover;
+}
+
+.mdl-layout__header_transparent {
+    background-color: rgba(20, 54, 71, 0.55);
+    min-height: 0;
+}
+.mdl-list__item--extra .mdl-list__item-primary-content{
+    height: 58px;
+}
+.mdl-list__item-avatar.material-icons-big {
+    height: 70px;
+    width: 70px;
+    font-size: 60px;
+    padding: 5px 5px 0 5px;
+}
+
+.projects {
+    background: url(../img/robots.jpg) center / cover;
+}
+
+.mio {
+    background: url(../img/profile.jpg) center / cover;
+}
+
+.error {
+    background: url(../img/error.jpg) center / cover;
+}
+
+.preview-card-wide > .mdl-card__title {
+  align-items: flex-start;
+}
+.preview-card-wide > .mdl-card__title > h4 {
+  margin-top: 0;
+}
+.preview-card-wide > .mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.preview-card-wide > .mdl-card__actions > .material-icons {
+  padding-right: 10px;
+}
+
+.mdl-layout__tab-bar {
+    height: auto;
+    width: 100%;
+    border-bottom: none !important;
+}
+
+.mdl-tabs__tab-bar {
+    border-bottom: none;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+    color: rgb(255, 255, 255);
+}
+
+.mdl-tabs__tab {
+    color: rgba(255, 255, 255, .6);
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+    background: rgb(255, 82, 82);
+}
+
+.mdl-layout__header {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+.mdl-layout__header {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+    }
+}
+
+.mdl-card__title-text {
+    margin: 10px;
+    text-shadow: #000 0 0 10px;
+}
+
+.pull-right {
+    float: right;
+}
+
