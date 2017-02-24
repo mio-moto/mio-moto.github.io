@@ -5,13 +5,22 @@ a {
     text-decoration: none;
 }
 
+a .material-icons-small {
+    font-size: inherit;
+    font-weight: bolder;
+}
+
 .link-like {
     color: #ff4081;
     font-weight: 500;
 }
 
 .height-fix {
-    height: 70px !important;
+    height: inherit !important;
+}
+
+.mdl-layout__content {
+    background: rgba(255, 255, 255, 0.33);
 }
 
 .preview-card-wide.mdl-card {
