@@ -19,6 +19,8 @@ a {
     margin: 100px auto;
 }
 
+
+
 .preview-card-wide > .mdl-card__title {
     padding: 0;
     color: #fff;
@@ -107,10 +109,14 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
-.mdl-layout__header {
+    .mdl-layout__header {
         display: flex !important;
         display: -webkit-flex !important;
         display: -ms-flexbox !important;
+    }
+
+    .preview-card-wide.mdl-card {
+        margin: 0 auto;
     }
 }
 
