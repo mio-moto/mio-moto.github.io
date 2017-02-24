@@ -19,8 +19,6 @@ a {
     margin: 100px auto;
 }
 
-
-
 .preview-card-wide > .mdl-card__title {
     padding: 0;
     color: #fff;
@@ -28,7 +26,7 @@ a {
 }
 
 .mdl-list__item {
-    padding: 46px 16px;
+    padding: 6px 16px;
 }
 
 .layout-transparent {
@@ -40,8 +38,13 @@ a {
     min-height: 0;
 }
 .mdl-list__item--extra .mdl-list__item-primary-content{
-    height: 58px;
+    height: inherit;
 }
+
+.mdl-list__item--three-line {
+    height: inherit;
+}
+
 .mdl-list__item-avatar.material-icons-big {
     height: 70px;
     width: 70px;
@@ -108,18 +111,6 @@ a {
     align-self: flex-end;
 }
 
-@media screen and (max-width: 1024px) {
-    .mdl-layout__header {
-        display: flex !important;
-        display: -webkit-flex !important;
-        display: -ms-flexbox !important;
-    }
-
-    .preview-card-wide.mdl-card {
-        margin: 0 auto;
-    }
-}
-
 .mdl-card__title-text {
     margin: 10px;
     text-shadow: #000 0 0 10px;
@@ -131,4 +122,36 @@ a {
 
 .mdl-layout {
     position: absolute;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .mdl-layout__container {
+        min-width: 320px;
+    }
+
+    .mdl-layout__header {
+        display: flex !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+    }
+
+    .preview-card-wide.mdl-card {
+        margin: 35px auto;
+    }
+
+    .mdl-list__item--three-line .mdl-list__item-text-body {
+        height: inherit;
+    }
+
+    .pull-right {
+        float: inherit;
+    }
+
+    @media screen and (max-width: 512px) {
+        .preview-card-wide.mdl-card {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
 }
