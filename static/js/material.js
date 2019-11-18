@@ -7,7 +7,7 @@
             return;
         }
         var url = new URL(window.location.href);
-        var c = url.searchParams.get("referrer");
+        var c = url.searchParams.get("referred");
         if (c === "" || c == true) {
             x.target.MaterialSnackbar.showSnackbar({
                 message: '',
