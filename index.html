@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="de/DE">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="MioMoto.de, programmer doing programming things.">
     <meta name="site" content="MioMoto.de">
     <meta name="viewport"
-    content="initial-scale=1.0, width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0">
+        content="initial-scale=1.0, width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=2.0">
     <title>miomoto.de</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
@@ -14,228 +15,251 @@
     <link rel="stylesheet" href="static/css/style.css">
     <script defer src="static/js/material.js"></script>
 </head>
+
 <body>
-<div class="layout-transparent mdl-layout mdl-js-layout layout-transparent">
-    <div class="mdl-layout__content">
-        <div class="page-content">
-            <div class="preview-card-wide mdl-card mdl-shadow--2dp">
-                <div class="mdl-card__title projects" id="card-back">
+    <div id="referrer-snackbar" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text" style="visibility: hidden; display: none;">Hello</div>
+        <div class="mdl-snackbar__text">
+            You've been redirected from an old domain, this new one is called <a>miomoto.de</a>
+        </div>
+        <div class="mdl-snackbar__action"></div>
+    </div>
+    <div class="layout-transparent mdl-layout mdl-js-layout layout-transparent">
+        <div class="mdl-layout__content">
+            <div class="page-content">
+                <div class="preview-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title projects" id="card-back">
 
-                    <header class="mdl-tabs mdl-js-tabs mdl-layout__header_transparent mdl-layout__header">
-                        <div class="mdl-tabs__tab-bar mdl-layout__header_transparent">
-                            <a href="#projects" class="mdl-tabs__tab is-active">Projects</a>
-                            <a href="#experiments" class="mdl-tabs__tab">Experiments</a>
-                            <a href="#mio" class="mdl-tabs__tab">Mio</a>
-                        </div>
-                    </header>
+                        <header class="mdl-tabs mdl-js-tabs mdl-layout__header_transparent mdl-layout__header">
+                            <div class="mdl-tabs__tab-bar mdl-layout__header_transparent">
+                                <a href="#projects" class="mdl-tabs__tab is-active">Projects</a>
+                                <a href="#experiments" class="mdl-tabs__tab">Experiments</a>
+                                <a href="#mio" class="mdl-tabs__tab">Mio</a>
+                            </div>
+                        </header>
+                    </div>
+                    <main class="mdl-layout__content mdl-tabs is-upgraded" id="main">
+                        <section class="mdl-tabs__panel is-active" id="projects">
+                            <div class="mdl-card__supporting-text">
+                                <span>
+                                    My projects resolve around crawling- or batch-software, which handles huge load
+                                    within
+                                    shortest timeframes. Serving as much users as possible.
+                                </span>
+                                <ul class="demo-list-three mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://github.com/DarkMio/Rabscuttle" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                    adb
+                                                </i>
+                                                <span>Rabscuttle</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    A C# IRC Bot with a flexible plugin system that runs under Windows
+                                                    and
+                                                    *nix systems. Rabscuttle needs more text so my list works.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://github.com/DarkMio/RedditRover" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big mdl-list__item-avatar">
+                                                    highlight
+                                                </i>
+                                                <span>RedditRover</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    RedditRover is a hackable, open and fully documented Reddit Bot
+                                                    Framework.
+                                                    It's running Python - using PRAW.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://github.com/darkmio/KappaTrace" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                    landscape
+                                                </i>
+                                                <span>KappaTrace</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    KappaTrace is an advanced Raytracer with standard OOP design to be
+                                                    easily extensible and feature rich. It was written in terms of a
+                                                    university course.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://miomoto.de/MixedRealityMedia-Thesis" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                    subject
+                                                </i>
+                                                <span>Mixed Reality Media Thesis</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    My bachelor thesis from 2017, discussing a general purpose mixed
+                                                    reality
+                                                    pipeline. It is possible to create a green screen set as complex as
+                                                    needed in a single app.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                    href="https://github.com/darkmio/" target="_blank">
+                                    Github
+                                </a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                    href="https://stackoverflow.com/users/3603637/mio-bambino" target="_blank">
+                                    StackOverflow
+                                </a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect pull-right"
+                                    href="" target="_blank">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </section>
+
+                        <section class="mdl-tabs__panel" id="experiments">
+                            <div class="mdl-card__supporting-text">
+                                <span>
+                                    These are (mostly) unfinished little pet projects, I've done or written over the
+                                    last
+                                    few years. Don't expect them to be very usable, most of them are simply proof of
+                                    concept.
+                                </span>
+                                <ul class="demo-list-three mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--three-line">
+                                        <span class="mdl-list__item-primary-content height-fix">
+                                            <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                3d_rotation
+                                            </i>
+                                            <span class="link-like">WebGL Experiments</span>
+                                            <span class="mdl-list__item-text-body">
+                                                Written in an uni course, showing off <a
+                                                    href="https://miomoto.de/Computergraphics-II/cg2-a01-canvas/"
+                                                    target="_blank">canvas manipulation<i
+                                                        class="material-icons material-icons-small">near_me</i></a>,
+                                                additional <a
+                                                    href="https://miomoto.de/Computergraphics-II/cg2-a02-surfaces"
+                                                    target="_blank">generation of 3D surfaces<i
+                                                        class="material-icons material-icons-small">near_me</i></a> and
+                                                finally <a href="https://miomoto.de/Computergraphics-II/cg2-a03-shaders"
+                                                    target="_blank">shader manipulations<i
+                                                        class="material-icons material-icons-small">near_me</i></a> with
+                                                WebGL.
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://opensource.steamdb.info/ValveResourceFormat/" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                    power
+                                                </i>
+                                                <span>Valve Resource Format</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    Decompilation project of Valves weird engine files. Includes a file
+                                                    browser inside the archives, preview of textures, models,
+                                                    animations.
+                                                    Maintained by xPaw.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://darkmio.github.io/ConanMap/" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                    games
+                                                </i>
+                                                <span>Conan Exiles Map</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    A tiny prototype for a video game map updating out of the game. This
+                                                    was
+                                                    denied by the restrictive nature of the provided Tools of the game
+                                                    developers.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://miomoto.de/MME2/A1/" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                    subscriptions
+                                                </i>
+                                                <span>µTube</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    Part of an university assignment, highlighting how different YouTube
+                                                    could
+                                                    look like if it strives to have a more interactive feeling to it.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
+                                        <a href="https://miomoto.de/HCI-prototype/" target="_blank">
+                                            <span class="mdl-list__item-primary-content">
+                                                <i class="material-icons material-icons-big  mdl-list__item-avatar">
+                                                    poll
+                                                </i>
+                                                <span>Human Computer Interaction Study</span>
+                                                <span class="mdl-list__item-text-body">
+                                                    What would happen if the web-based enroll-system of our university
+                                                    wouldn't suck so hard? A little study - login with any credentials.
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section class="mdl-tabs__panel" id="mio">
+                            <div class="mdl-card__supporting-text">
+                                Mio lives in Berlin and is currently employed at <a
+                                    href="https://artcom.de/">ART+COM</a> as
+                                a developer of new technologies, finding and writing software solutions in different
+                                fields
+                                for media exhibition pieces.<br />
+                                Currently, he's lecturing at <a href="https://www.htw-berlin.de/">HTW Berlin</a> in
+                                topics about
+                                real time engines.<br />
+                                He graduated with distinction in media computer sciences and aims for a master's degree
+                                in a
+                                foreign country.
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                    href="https://github.com/darkmio/" target="_blank">
+                                    Github
+                                </a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                    href="mailto:mio@miomoto.de">
+                                    Mail
+                                </a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                    href="https://twitter.com/darkmio" target="_blank">
+                                    Twitter
+                                </a>
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect pull-right"
+                                    href="https://miomoto.de/Computergraphics-II/cg2-a01-canvas/" target="_blank">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </section>
+                    </main>
                 </div>
-                <main class="mdl-layout__content mdl-tabs is-upgraded" id="main">
-                    <section class="mdl-tabs__panel is-active" id="projects">
-                        <div class="mdl-card__supporting-text">
-                            <span>
-                                My projects resolve around crawling- or batch-software, which handles huge load within
-                                shortest timeframes. Serving as much users as possible.
-                            </span>
-                            <ul class="demo-list-three mdl-list">
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://github.com/DarkMio/Rabscuttle" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                          <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                              adb
-                                          </i>
-                                          <span>Rabscuttle</span>
-                                          <span class="mdl-list__item-text-body">
-                                             A C# IRC Bot with a flexible plugin system that runs under Windows and
-                                              *nix systems. Rabscuttle needs more text so my list works.
-                                          </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://github.com/DarkMio/RedditRover" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                          <i class="material-icons material-icons-big mdl-list__item-avatar">
-                                              highlight
-                                          </i>
-                                          <span>RedditRover</span>
-                                          <span class="mdl-list__item-text-body">
-                                             RedditRover is a hackable, open and fully documented Reddit Bot Framework.
-                                              It's running Python - using PRAW.
-                                          </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://github.com/darkmio/KappaTrace" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                            <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                                landscape
-                                            </i>
-                                            <span>KappaTrace</span>
-                                            <span class="mdl-list__item-text-body">
-                                                KappaTrace is an advanced Raytracer with standard OOP design to be
-                                                easily extensible and feature rich. It was written in terms of a
-                                                university course.
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://miomoto.de/MixedRealityMedia-Thesis" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                            <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                                subject
-                                            </i>
-                                            <span>Mixed Reality Media Thesis</span>
-                                            <span class="mdl-list__item-text-body">
-                                                My bachelor thesis from 2017, discussing a general purpose mixed reality
-                                                pipeline. It is possible to create a green screen set as complex as
-                                                needed in a single app.
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                               href="https://github.com/darkmio/" target="_blank">
-                                Github
-                            </a>
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                               href="https://stackoverflow.com/users/3603637/mio-bambino" target="_blank">
-                                StackOverflow
-                            </a>
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect pull-right"
-                               href="" target="_blank">
-                                LinkedIn
-                            </a>
-                        </div>
-                    </section>
-
-                    <section class="mdl-tabs__panel" id="experiments">
-                        <div class="mdl-card__supporting-text">
-                            <span>
-                                These are (mostly) unfinished little pet projects, I've done or written over the last
-                                few years. Don't expect them to be very usable, most of them are simply proof of
-                                concept.
-                            </span>
-                            <ul class="demo-list-three mdl-list">
-                                <li class="mdl-list__item mdl-list__item--three-line">
-                                    <span class="mdl-list__item-primary-content height-fix">
-                                      <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                          3d_rotation
-                                      </i>
-                                      <span class="link-like">WebGL Experiments</span>
-                                      <span class="mdl-list__item-text-body">
-                                          Written in an uni course, showing off <a
-                                              href="https://miomoto.de/Computergraphics-II/cg2-a01-canvas/"
-                                              target="_blank">canvas manipulation<i
-                                              class="material-icons material-icons-small">near_me</i></a>, additional <a
-                                              href="https://miomoto.de/Computergraphics-II/cg2-a02-surfaces"
-                                              target="_blank">generation of 3D surfaces<i
-                                              class="material-icons material-icons-small">near_me</i></a> and finally <a
-                                              href="https://miomoto.de/Computergraphics-II/cg2-a03-shaders"
-                                              target="_blank">shader manipulations<i
-                                              class="material-icons material-icons-small">near_me</i></a> with WebGL.
-                                      </span>
-                                    </span>
-                                </li>
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://opensource.steamdb.info/ValveResourceFormat/" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                          <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                             power
-                                          </i>
-                                          <span>Valve Resource Format</span>
-                                          <span class="mdl-list__item-text-body">
-                                              Decompilation project of Valves weird engine files. Includes a file
-                                              browser inside the archives, preview of textures, models, animations.
-                                              Maintained by xPaw.
-                                          </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://darkmio.github.io/ConanMap/" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                          <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                              games
-                                          </i>
-                                          <span>Conan Exiles Map</span>
-                                          <span class="mdl-list__item-text-body">
-                                              A tiny prototype for a video game map updating out of the game. This was
-                                              denied by the restrictive nature of the provided Tools of the game
-                                              developers.
-                                          </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://miomoto.de/MME2/A1/" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                          <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                              subscriptions
-                                          </i>
-                                          <span>µTube</span>
-                                          <span class="mdl-list__item-text-body">
-                                              Part of an university assignment, highlighting how different YouTube could
-                                              look like if it strives to have a more interactive feeling to it.
-                                          </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li class="mdl-list__item mdl-list__item--three-line mdl-list__item--extra">
-                                    <a href="https://miomoto.de/HCI-prototype/" target="_blank">
-                                        <span class="mdl-list__item-primary-content">
-                                          <i class="material-icons material-icons-big  mdl-list__item-avatar">
-                                              poll
-                                          </i>
-                                          <span>Human Computer Interaction Study</span>
-                                          <span class="mdl-list__item-text-body">
-                                              What would happen if the web-based enroll-system of our university
-                                              wouldn't suck so hard? A little study - login with any credentials.
-                                          </span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section class="mdl-tabs__panel" id="mio">
-                        <div class="mdl-card__supporting-text">
-                            Mio lives in Berlin and is currently employed at <a href="https://artcom.de/">ART+COM</a> as
-                            a developer of new technologies, finding and writing software solutions in different fields
-                            for media exhibition pieces.<br/>
-                            Currently, he's lecturing at <a href="https://www.htw-berlin.de/">HTW Berlin</a> in topics about
-                            real time engines.<br/>
-                            He graduated with distinction in media computer sciences and aims for a master's degree in a
-                            foreign country.
-                        </div>
-                        <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                               href="https://github.com/darkmio/" target="_blank">
-                                Github
-                            </a>
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                               href="mailto:mio@miomoto.de">
-                                Mail
-                            </a>
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                               href="https://twitter.com/darkmio" target="_blank">
-                                Twitter
-                            </a>
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect pull-right"
-                               href="https://miomoto.de/Computergraphics-II/cg2-a01-canvas/" target="_blank">
-                                LinkedIn
-                            </a>
-                        </div>
-                    </section>
-                </main>
             </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>

@@ -1,6 +1,23 @@
 ;(function() {
 "use strict";
 
+(function() {
+    window.addEventListener('mdl-componentupgraded', function(x) {
+        if(x.target.id.indexOf('referrer-snackbar') < 0) {
+            return;
+        }
+        var url = new URL(window.location.href);
+        var c = url.searchParams.get("referrer");
+        if (c === "" || c == true) {
+            x.target.MaterialSnackbar.showSnackbar({
+                message: '',
+                timeout: 30000,
+            });
+        }
+    })
+}());
+
+
 /**
  * @license
  * Copyright 2015 Google Inc. All Rights Reserved.
