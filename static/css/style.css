@@ -58,10 +58,34 @@
     --offset-time19: 19s;
 }
 
+/* poppins-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
+  * {
+	font-family: 'Poppins', monospace;/*'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  }
 ul {
-    font-size: 2em;
+    font-size: 1.7em;
     padding-left: 0;
     list-style: none;
+}
+
+.external-title {
+	color: var(--color-primary);
+}
+
+.external-title img, .external-link {
+	height: 0.5em;
 }
 
 .pictogram {
