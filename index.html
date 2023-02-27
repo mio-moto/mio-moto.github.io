@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="static/css/style.css">
   <script defer src="static/js/site.js"></script>
 </head>
-<body>
+<body class="dark">
   <div class="confetti-barrel">
     <div class="confetti"><svg viewBox="0 0 250 250"><path class="with-stroke" d="M125,42a83,83,0,1,1-83,83,83.09,83.09,0,0,1,83-83m0-35A118,118,0,1,0,243,125,118,118,0,0,0,125,7Z" /></svg></div>
     <div class="confetti"><svg viewBox="0 0 250 250"><path class="with-stroke" d="M125,42a83,83,0,1,1-83,83,83.09,83.09,0,0,1,83-83m0-35A118,118,0,1,0,243,125,118,118,0,0,0,125,7Z" /></svg></div>
@@ -68,7 +68,17 @@
   </div>
 
   <div class="webpage">
+    
     <div class="container">
+      <div class="row">
+        <div class="col-12 is-center">
+      <label class="switch page is-center">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  
       <nav class="tabs is-center">
         <a href="#me">me</a>
         <a href="#work">work</a>
@@ -89,11 +99,11 @@
             <ul>
               <li>
                 <a href="static/files/Lead Developer - Martin Zier.pdf" target="_blank">
-                  <img src="static/img/regular-document.png" class="pictogram" /> CV.pdf
+                  <img src="static/img/regular-document.png" class="pictogram invert-color" /> CV.pdf
                 </a>
               </li>
               <li>
-                <a href="mailto:mio@miomoto.de"><img src="static/img/new-post.png" class="pictogram" /> mio@miomoto.de</a>
+                <a href="mailto:mio@miomoto.de"><img src="static/img/new-post.png" class="pictogram  invert-color" /> mio@miomoto.de</a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/mio-moto/" target="_blank">
@@ -102,7 +112,7 @@
               </li>
               <li>
                 <a href="https://github.com/darkmio" target="_blank">
-                  <img src="static/img/github.png" class="pictogram" /> Github
+                  <img src="static/img/github.png" class="pictogram invert-color" /> Github
                 </a>
               </li>
             </ul>
@@ -159,7 +169,7 @@
         </nav>
 
         <fragment class="strong" id="rabs">
-          <h4><a class="external-title" href="https://github.com/DarkMio/disco-rabscuttle">Rabscuttle <img src="static/img/external-link.png" /></a></h4>
+          <h4><a class="external-title" href="https://github.com/DarkMio/disco-rabscuttle">Rabscuttle <img src="static/img/external-link.png" class="invert-color" /></a></h4>
           <p>A bot originating from IRC, initially written in PHP, rewritten in Python, C# and TypeScript</p>
           <p>Its current iteration is a self-hosting TypeScript Discord bot on home network hardware</p>
           <p>Rabscuttle lets me explore higher-order TypeScript concepts and general type theory while
@@ -167,7 +177,7 @@
         </fragment>
 
         <fragment class="strong" id="mrt">
-          <h4><a class="external-title" href="https://miomoto.de/MixedRealityMedia-Thesis">Mixed Reality Media Thesis <img src="static/img/external-link.png" /></a></h4>
+          <h4><a class="external-title" href="https://miomoto.de/MixedRealityMedia-Thesis">Mixed Reality Media Thesis <img src="static/img/external-link.png" class="invert-color" /></a></h4>
           <p>My bachelor thesis from 2017 discussing a general purpose mixed reality pipeline</p>
           <p>The thesis tackles the communication of experiences in VR/XR/AR and tries to transport what
             the immersive actor sees</p>
@@ -176,7 +186,7 @@
         </fragment>
 
         <fragment class="strong" id="qmk">
-          <h4><a class="external-title" href="https://github.com/qmk/qmk_firmware">Quantum Mechanical Keyboard <img src="static/img/external-link.png" /></a></h4>
+          <h4><a class="external-title" href="https://github.com/qmk/qmk_firmware">Quantum Mechanical Keyboard <img src="static/img/external-link.png" class="invert-color" /></a></h4>
           <p>OSS keyboard firmware for running AVR and ARM controllers, with a wide range of additional
             hardware being supported</p>
           <p>Regular contributor with every new keyboard adopted, primarily interested in programming I2C and
@@ -184,10 +194,10 @@
         </fragment>
 
         <fragment class="strong" id="redditrover">
-          <h4><a class="external-title" href="https://github.com/darkmio/redditrover">RedditRover <img src="static/img/external-link.png" /></a></h4>
+          <h4><a class="external-title" href="https://github.com/darkmio/redditrover">RedditRover <img src="static/img/external-link.png" class="invert-color" /></a></h4>
           <p>The first real time reddit bot system, allowing to host many simulatenous accounts without
             hitting rate-limits from a single IP</p>
-          <p>Leveraging the excellent python library of <a href="https://praw.readthedocs.io/en/stable/" target="_blank">PRAW <img src="static/img/external-link.png" class="external-link" /></a> is what sparked my interest in automating everything</p>
+          <p>Leveraging the excellent python library of <a href="https://praw.readthedocs.io/en/stable/" target="_blank">PRAW <img src="static/img/external-link.png" class="external-link invert-color" /></a> is what sparked my interest in automating everything</p>
         </fragment>
       </section>
     </div>

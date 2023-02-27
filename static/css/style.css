@@ -1,90 +1,177 @@
 :root {
-    --bg-color: #ffffff;
-    --bg-secondary-color: #f3f3f6;
-    --color-primary: #14854F;
-    --color-lightGrey: #d2d6dd;
-    --color-grey: #747681;
-    --color-darkGrey: #3f4144;
-    --color-error: #d43939;
-    --color-success: #28bd14;
-    --grid-maxWidth: 120rem;
-    --grid-gutter: 2rem;
-    --font-size: 1.6rem;
-    --font-color: #333333;
-    --font-family-sans: sans-serif;
-    --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+	--bg-color: #ffffff;
+	--bg-secondary-color: #f3f3f6;
+	--color-primary: #14854F;
+	--color-lightGrey: #d2d6dd;
+	--color-grey: #747681;
+	--color-darkGrey: #3f4144;
+	--color-error: #d43939;
+	--color-success: #28bd14;
+	--grid-maxWidth: 120rem;
+	--grid-gutter: 2rem;
+	--font-size: 1.6rem;
+	--font-color: #333333;
+	--font-family-sans: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	--font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+	--color-selection: #B87633;
 
-    --bg-color: #000;
-    --bg-secondary-color: #262626;
-    --font-color: #f5f5f5;
-    --color-grey: #bbb;
-    --color-darkGrey: #888;
-    --color-primary: #17c16f;
-    --color-error: #ea4f4f;
+	--color1: #F5D7FA;
+	--color2: #FEDDE3;
+	--color3: #FBD8D3;
+	--color4: #F4FCE4;
+	--color5: #F8E6D3;
+	--scatter-time1: 10s;
+	--scatter-time2: 11s;
+	--scatter-time3: 12s;
+	--scatter-time4: 13s;
+	--scatter-time5: 14s;
+	--scatter-time6: 15s;
+	--scatter-time7: 16s;
+	--scatter-time8: 17s;
+	--offset-time0: 0s;
+	--offset-time1: 1s;
+	--offset-time2: 2s;
+	--offset-time3: 3s;
+	--offset-time4: 4s;
+	--offset-time5: 5s;
+	--offset-time6: 6s;
+	--offset-time7: 7s;
+	--offset-time8: 8s;
+	--offset-time9: 9s;
+	--offset-time10: 10s;
+	--offset-time11: 11s;
+	--offset-time12: 12s;
+	--offset-time13: 13s;
+	--offset-time14: 14s;
+	--offset-time15: 15s;
+	--offset-time16: 16s;
+	--offset-time17: 17s;
+	--offset-time18: 18s;
+	--offset-time19: 19s;
+}
 
+.dark {
+	
+	--bg-color: #000;
+	--bg-secondary-color: #262626;
+	--font-color: #f5f5f5;
+	--color-grey: #bbb;
+	--color-darkGrey: #888;
+	--color-primary: #17c16f;
+	--color-error: #ea4f4f;
+	--color-selection: #B87633;
 
-    --color1: #35274A;
+	--color1: #35274A;
 	--color2: #8E2D33;
 	--color3: #AB2833;
 	--color4: #A43C14;
 	--color5: #B87633;
-    --scatter-time1: 10s;
-    --scatter-time2: 11s;
-    --scatter-time3: 12s; 
-    --scatter-time4: 13s;
-    --scatter-time5: 14s;
-    --scatter-time6: 15s;
-    --scatter-time7: 16s;
-    --scatter-time8: 17s;
-    --offset-time0: 0s;
-    --offset-time1: 1s;
-    --offset-time2: 2s;
-    --offset-time3: 3s;
-    --offset-time4: 4s;
-    --offset-time5: 5s;
-    --offset-time6: 6s;
-    --offset-time7: 7s;
-    --offset-time8: 8s;
-    --offset-time9: 9s;
-    --offset-time10: 10s;
-    --offset-time11: 11s;
-    --offset-time12: 12s;
-    --offset-time13: 13s;
-    --offset-time14: 14s;
-    --offset-time15: 15s;
-    --offset-time16: 16s;
-    --offset-time17: 17s;
-    --offset-time18: 18s;
-    --offset-time19: 19s;
+
+
 }
+
+body {
+	transition: all 0.25s ease, color 0.75s ease;
+
+}
+
+/* The switch - the box around the slider */
+.switch {
+	font-size: 17px;
+	position: relative;
+	display: inline-block;
+	width: 2em;
+	height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: .4s;
+	border-radius: 30px;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 1.4em;
+	width: 1.4em;
+	border-radius: 20px;
+	left: 0em;
+	bottom: 0em;
+	background-color: rgb(219, 198, 2);
+	transition: .4s;
+  }
+  
+
+
+  
+  .slider::after {
+	width: 20px;
+	height: 20px;
+	left: 15%;
+	top: 35%;
+	border-radius: 60%;
+	position: absolute;
+	content: "";
+	background-color: var(--bg-color);
+	transition: ease 0.4s;
+  }
+  
+  input:checked + .slider::after {
+	left: 80%;
+	width: 0px;
+	height: 0px;
+  }
 
 /* poppins-regular - latin */
 @font-face {
-	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-display: swap;
 	font-family: 'Poppins';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-		 url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-  }
-  * {
-	font-family: 'Poppins', monospace;/*'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-  }
+	src: url('../fonts/poppins-v20-latin-regular.eot');
+	/* IE9 Compat Modes */
+	src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+		/* IE6-IE8 */
+		url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+		/* Super Modern Browsers */
+		url('../fonts/poppins-v20-latin-regular.woff') format('woff'),
+		/* Modern Browsers */
+		url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'),
+		/* Safari, Android, iOS */
+		url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg');
+	/* Legacy iOS */
+}
+
+* {
+	text-shadow: 0 0 3px var(--bg-color);
+}
+
 ul {
-    font-size: 1.7em;
-    padding-left: 0;
-    list-style: none;
+	font-size: 1.7em;
+	padding-left: 0;
+	list-style: none;
 }
 
 .external-title {
 	color: var(--color-primary);
 }
 
-.external-title img, .external-link {
+.external-title img,
+.external-link {
 	height: 0.5em;
 }
 
@@ -93,86 +180,95 @@ ul {
 	vertical-align: text-top;
 }
 
+.invert-color { 
+	filter: invert(100%);
+}
+
+.dark .invert-color {
+	filter: none;
+}
+
 .tabs>a.selected {
-	border-bottom: 2px solid var(--color5);
-    opacity: 1;
+	border-bottom: 2px solid var(--color-selection);
+	opacity: 1;
 }
 
 .webpage {
-    display: flex;
-    margin: 10rem auto;
-    max-width: 800px;
-    min-height: 75vh;
+	display: flex;
+	margin: 8rem auto;
+	max-width: 800px;
+	min-height: 75vh;
 }
 
-section, fragment { 
+section,
+fragment {
 	display: none;
 }
 
 b {
-    color: #FDD;
+	color: #FDD;
 }
 
 .container {
 
-    min-height: 600px;
+	min-height: 600px;
 }
 
 
 .weight {
-    font-weight: 900;
-    font-size: 3.5em;
+	font-weight: 900;
+	font-size: 3.5em;
 }
 
 .wide {
-    font-size: 3em;
+	font-size: 3em;
 }
 
 .strong {
-    font-size: 2em;
+	font-size: 2em;
 }
 
-.wide > p {
-    margin: 0;
-    line-height: 1;
+.wide>p {
+	margin: 0;
+	line-height: 1;
 }
 
 .page {
-    margin-top: 5rem;
+	margin-top: 5rem;
 }
 
 
 .confetti-barrel {
-    z-index: -9;
+	z-index: -9;
 	min-height: 100vh;
 	overflow: hidden;
 	padding: 60px;
 	position: absolute;
-    top: 0;
-    left: 0;
+	top: 0;
+	left: 0;
 	width: 100%;
-	}
+}
 
 .confetti {
 	position: absolute;
 	display: flex;
 	font-size: 7rem;
-    width: 50px;
-    height: 50px;
-    font-weight: 1500;
-    color: #FFF;
+	width: 50px;
+	height: 50px;
+	font-weight: 1500;
+	color: #FFF;
 	top: -100px;
 }
 
 .with-fill {
-	fill:none;
-	stroke:var(--foreground);
-	stroke-linejoin:round;
-	stroke-width:35px;
+	fill: none;
+	stroke: var(--foreground);
+	stroke-linejoin: round;
+	stroke-width: 35px;
 }
 
 .with-stroke {
-	fill:var(--foreground);
+	fill: var(--foreground);
 }
 
 
@@ -180,250 +276,274 @@ b {
 	--foreground: var(--color1);
 	animation: fall var(--scatter-time1) linear infinite;
 	left: 10%;
-	}
+}
 
 .confetti:nth-child(2) {
 	--foreground: var(--color2);
 	animation: fall var(--scatter-time2) linear infinite var(--offset-time2);
 	left: 20%;
-	}
+}
 
 .confetti:nth-child(3) {
 	--foreground: var(--color3);
 	animation: fall var(--scatter-time3) linear infinite var(--offset-time4);
 	left: 30%;
-	}
+}
 
 .confetti:nth-child(4) {
 	--foreground: var(--color4);
 	animation: fall var(--scatter-time7) linear infinite var(--offset-time1);
 	left: 40%;
-	}
+}
 
 .confetti:nth-child(5) {
 	--foreground: var(--color5);
 	animation: fall var(--scatter-time8) linear infinite var(--offset-time7);
 	left: 50%;
-	}
+}
 
 .confetti:nth-child(6) {
 	--foreground: var(--color1);
 	animation: fall var(--scatter-time3) linear infinite var(--offset-time2);
 	left: 60%;
-	}
+}
 
 .confetti:nth-child(7) {
 	--foreground: var(--color2);
 	animation: fall var(--scatter-time4) linear infinite var(--offset-time7);
 	left: 70%;
-	}
+}
 
 .confetti:nth-child(8) {
 	--foreground: var(--color3);
 	animation: fall var(--scatter-time3) linear infinite var(--offset-time9);
 	left: 80%;
-	}
+}
 
 .confetti:nth-child(9) {
 	--foreground: var(--color4);
 	animation: fall var(--scatter-time5) linear infinite var(--offset-time9);
 	left: 90%;
-	}
+}
 
 .confetti:nth-child(10) {
 	--foreground: var(--color5);
 	animation: fall var(--scatter-time6) linear infinite var(--offset-time11);
 	left: 100%;
-	}
+}
 
 .confetti:nth-child(11) {
 	--foreground: var(--color1);
 	animation: fall2 var(--scatter-time1) linear infinite;
 	left: 95%;
-	}
+}
 
 .confetti:nth-child(12) {
 	--foreground: var(--color2);
 	animation: fall2 var(--scatter-time2) linear infinite var(--offset-time1);
 	left: 85%;
-	}
+}
 
 .confetti:nth-child(13) {
 	--foreground: var(--color3);
 	animation: fall2 var(--scatter-time3) linear infinite var(--offset-time2);
 	left: 75%;
-	}
+}
 
 .confetti:nth-child(14) {
 	--foreground: var(--color4);
 	animation: fall2 var(--scatter-time7) linear infinite var(--offset-time13);
 	left: 65%;
-	}
+}
 
 .confetti:nth-child(15) {
 	--foreground: var(--color5);
 	animation: fall2 var(--scatter-time8) linear infinite var(--offset-time4);
 	left: 55%;
-	}
+}
 
 .confetti:nth-child(16) {
 	--foreground: var(--color1);
 	animation: fall2 var(--scatter-time3) linear infinite var(--offset-time15);
 	left: 45%;
-	}
+}
 
 .confetti:nth-child(17) {
 	--foreground: var(--color2);
 	animation: fall2 var(--scatter-time4) linear infinite var(--offset-time16);
 	left: 35%;
-	}
+}
 
 .confetti:nth-child(18) {
 	--foreground: var(--color3);
 	animation: fall2 var(--scatter-time3) linear infinite var(--offset-time7);
 	left: 25%;
-	}
+}
 
 .confetti:nth-child(19) {
 	--foreground: var(--color4);
 	animation: fall2 var(--scatter-time5) linear infinite var(--offset-time18);
 	left: 15%;
-	}
+}
 
 .confetti:nth-child(20) {
 	--foreground: var(--color5);
 	animation: fall2 var(--scatter-time6) linear infinite var(--offset-time9);
 	left: 5%;
-	}
+}
 
 .confetti:nth-child(21) {
 	--foreground: var(--color1);
 	animation: fall var(--scatter-time1) linear infinite;
 	left: 3%;
-	}
+}
 
 .confetti:nth-child(22) {
 	--foreground: var(--color2);
 	animation: fall var(--scatter-time2) linear infinite var(--offset-time13);
 	left: 13%;
-	}
+}
 
 .confetti:nth-child(23) {
 	--foreground: var(--color3);
 	animation: fall var(--scatter-time3) linear infinite var(--offset-time4);
 	left: 23%;
-	}
+}
 
 .confetti:nth-child(24) {
 	--foreground: var(--color4);
 	animation: fall var(--scatter-time7) linear infinite var(--offset-time15);
 	left: 33%;
-	}
+}
 
 .confetti:nth-child(25) {
 	--foreground: var(--color5);
 	animation: fall var(--scatter-time8) linear infinite var(--offset-time16);
 	left: 43%;
-	}
+}
 
 .confetti:nth-child(26) {
 	--foreground: var(--color1);
 	animation: fall var(--scatter-time3) linear infinite var(--offset-time2);
 	left: 53%;
-	}
+}
 
 .confetti:nth-child(27) {
 	--foreground: var(--color2);
 	animation: fall var(--scatter-time4) linear infinite var(--offset-time7);
 	left: 63%;
-	}
+}
 
 .confetti:nth-child(28) {
 	--foreground: var(--color3);
 	animation: fall var(--scatter-time3) linear infinite var(--offset-time18);
 	left: 73%;
-	}
+}
 
 .confetti:nth-child(29) {
 	--foreground: var(--color4);
 	animation: fall var(--scatter-time5) linear infinite var(--offset-time9);
 	left: 83%;
-	}
+}
 
 .confetti:nth-child(30) {
 	--foreground: var(--color5);
 	animation: fall var(--scatter-time6) linear infinite var(--offset-time1);
 	left: 93%;
-	}
+}
 
 .confetti:nth-child(31) {
 	--foreground: var(--color1);
 	animation: fall2 var(--scatter-time6) linear infinite var(--offset-time1);
 	left: 7%;
-	}
+}
 
 .confetti:nth-child(32) {
 	--foreground: var(--color2);
 	animation: fall2 var(--scatter-time5) linear infinite var(--offset-time9);
 	left: 17%;
-	}
+}
 
 .confetti:nth-child(33) {
 	--foreground: var(--color3);
 	animation: fall2 var(--scatter-time3) linear infinite var(--offset-time1);
 	left: 27%;
-	}
+}
 
 .confetti:nth-child(34) {
 	--foreground: var(--color4);
 	animation: fall2 var(--scatter-time4) linear infinite var(--offset-time7);
 	left: 37%;
-	}
+}
 
 .confetti:nth-child(35) {
 	--foreground: var(--color5);
 	animation: fall2 var(--scatter-time3) linear infinite var(--offset-time2);
 	left: 47%;
-	}
+}
 
 .confetti:nth-child(36) {
 	--foreground: var(--color1);
 	animation: fall2 var(--scatter-time8) linear infinite var(--offset-time7);
 	left: 57%;
-	}
+}
 
 .confetti:nth-child(37) {
 	--foreground: var(--color2);
 	animation: fall2 var(--scatter-time7) linear infinite var(--offset-time9);
 	left: 67%;
-	}
+}
 
 .confetti:nth-child(38) {
 	--foreground: var(--color3);
 	animation: fall2 var(--scatter-time3) linear infinite var(--offset-time4);
 	left: 77%;
-	}
+}
 
 .confetti:nth-child(39) {
 	--foreground: var(--color4);
 	animation: fall2 var(--scatter-time2) linear infinite var(--offset-time2);
 	left: 87%;
-	}
+}
 
 .confetti:nth-child(40) {
 	--foreground: var(--color5);
 	animation: fall2 var(--scatter-time1) linear infinite var(--offset-time3);
 	left: 97%;
-	}
+}
 
 @keyframes fall {
-	0% {top:-110px; transform: rotate(0deg) rotateY(-90deg); opacity:1;}
-    75% {opacity: 0.7;}
-	100% {top:900px; transform: rotate(360deg) rotateY(180deg); opacity:0;}
+	0% {
+		top: -110px;
+		transform: rotate(0deg) rotateY(-90deg);
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0.7;
+	}
+
+	100% {
+		top: 900px;
+		transform: rotate(360deg) rotateY(180deg);
+		opacity: 0;
+	}
 }
 
 @keyframes fall2 {
-	0% {top:calc(-10vh); transform: rotate(0deg) rotateY(90deg); opacity:1;}
-    75% { opacity: 0.5;}
-	100% {top:calc(100vh); transform: rotate(-360deg) rotateY(-180deg); opacity:0;}
+	0% {
+		top: calc(-10vh);
+		transform: rotate(0deg) rotateY(90deg);
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0.5;
+	}
+
+	100% {
+		top: calc(100vh);
+		transform: rotate(-360deg) rotateY(-180deg);
+		opacity: 0;
+	}
 }

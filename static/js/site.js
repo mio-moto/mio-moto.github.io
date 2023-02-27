@@ -2,6 +2,14 @@ window.addEventListener('DOMContentLoaded', () => {
     'use strict';
     
     [...document.getElementsByTagName("nav")].forEach(x => registerNavigation(x, ["section", "fragment"]));
+
+    document.getElementById("theme-toggle").addEventListener("click", (e) => {
+        if(e.target.checked) {
+            document.body.classList.remove("dark");
+        } else {
+            document.body.classList.add("dark");
+        }
+    })
   });
 
   /**
