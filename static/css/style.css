@@ -278,6 +278,7 @@
 
 body {
 	transition: all 0.25s ease, color 0.75s ease;
+	overflow-y: scroll;
 }
 
 /* The switch - the box around the slider */
