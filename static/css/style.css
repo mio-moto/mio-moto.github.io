@@ -297,6 +297,10 @@ body {
 	text-shadow: 0 0 3px var(--bg-color);
 }
 
+h1 {
+	font-size:1.25em
+}
+
 ul {
 	font-size: 1.7em;
 	padding-left: 0;
