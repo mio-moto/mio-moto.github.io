@@ -12,57 +12,6 @@ window.addEventListener("DOMContentLoaded", () => {
       document.body.classList.add("dark");
     }
   });
-
-  {
-    const writeSpace = document.getElementById("name");
-    writeSpace.innerText = "Martin Zier";
-    const text = "\r\r\r\r\r\r\r\r\r\r\rMio Moto";
-    let lastBlinker;
-    let i = 0;
-    let abort = false;
-    const write = () => {
-      if (i >= text.length) {
-        abort = true;
-        return;
-      }
-      const letter = text[i++];
-      if (letter == "\r") {
-        writeSpace.textContent = writeSpace.textContent.slice(0, -1);
-        setTimeout(write, 50);
-      } else {
-        writeSpace.textContent = writeSpace.textContent + letter;
-        setTimeout(write, Math.random() * 120);
-      }
-    };
-    let step = 0;
-    const blink = () => {
-      if (step == 10) {
-        write();
-        return;
-      }
-      if (step % 2 == 0) {
-        writeSpace.textContent = writeSpace.textContent + "_";
-      } else {
-        writeSpace.textContent = writeSpace.textContent.slice(0, -1);
-      }
-      step++;
-      setTimeout(blink, 500);
-    };
-    const blinky = () => {
-      step %= 2;
-      step++;
-      if (step % 2 == 0) {
-        lastBlinker.textContent = "";
-      } else {
-        lastBlinker.textContent = "_";
-      }
-      if (!aborted) {
-        lastBlinker.textContent = "";
-        setTimeout(blinky, 500);
-      }
-    };
-    blink();
-  }
 });
 
 /**
